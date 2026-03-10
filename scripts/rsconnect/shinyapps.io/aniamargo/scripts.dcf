@@ -1,0 +1,10 @@
+name: scripts
+title:
+username: aniamargo
+account: aniamargo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16641824
+bundleId: 11563782
+url: https://aniamargo.shinyapps.io/scripts/
+version: 1

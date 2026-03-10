@@ -1,0 +1,10 @@
+name: researchportfolio
+title:
+username: aniamargo
+account: aniamargo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16642156
+bundleId: 11689971
+url: https://aniamargo.shinyapps.io/researchportfolio/
+version: 1
