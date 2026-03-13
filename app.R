@@ -354,7 +354,7 @@ ui <- bslib::page_fluid(
           tags$ol(
             tags$li("Experiments 1–4: accuracy + pupil plots + takeaways"),
             tags$li("Pupil Animations: dynamic timecourses"),
-            tags$li("Prediction Model: linear mixed-effects model with an autoregressive feature")
+            tags$li("Model: linear mixed-effects model with an autoregressive feature")
           )
         ),
         col_widths = c(sm = 12, md = 6, lg = 6)
@@ -609,7 +609,6 @@ nav_panel( div("Pupil Animation", style = "margin-right: 12px;"),
     # Description card (always visible)
       card(card_header("Animated pupil plots"),
       p("These animations show pupil dilation over time across encoding, by condition."),
-      p("Please be patient, as these take some time to load."),
       p("Use the checkboxes in the sidebar to display one or more experiments together.")
     ),
     
@@ -1369,7 +1368,7 @@ server <- function(input, output, session) {
         out_id <- paste0("summary_", k)
         
         card(
-          card_header(paste0(titles[[k]], " — model predictors (forest plot)")),
+          card_header(paste0(titles[[k]], " — model predictors")),
           plotOutput(out_id, height = "260px")
         )
       })
