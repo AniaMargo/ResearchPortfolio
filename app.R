@@ -277,11 +277,11 @@ make_anim_plot <- function(df, title_text, subtitle_text,
     transition_reveal(Bin)
 }
 
-# Define UI for application that draws a histogram
+# Define UI for application 
 ui <- bslib::page_fluid(
   theme = bslib::bs_theme(version = 5, bootswatch = "minty"),
   
-  # ---- GLOBAL CSS (put this ONCE) ----
+  # ---- GLOBAL CSS (Appears ONCE) ----
   tags$head(
     tags$style(HTML("
       .anim-gif img {
@@ -315,7 +315,7 @@ ui <- bslib::page_fluid(
     nav_panel(
       div("Background", style = "margin-right: 12px;"),
       
-      # ---- Nice title (like page_sidebar title) ----
+      # ---- Background  ----
       tags$div(
         class = "mb-3",
         tags$h2(icon("brain"), " Background", class = "page-title"),
@@ -623,7 +623,7 @@ nav_panel( div("Pupil Animation", style = "margin-right: 12px;"),
 nav_panel(
   div("Prediction Model", style = "margin-right: 12px;"),
   page_sidebar(
-    title = "Prediction Models (REML)",
+    title = "Models",
     sidebar = sidebar(
       checkboxGroupInput(
         "model_exps",
